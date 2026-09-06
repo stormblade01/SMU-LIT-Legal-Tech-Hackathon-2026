@@ -1,0 +1,78 @@
+
+> my-project@0.1.0 dev
+> next dev
+
+▲ Next.js 16.3.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://10.130.175.107:3000
+- Environments: .env.local
+✓ Ready in 628ms
+✓ Running next.config.mjs took 27ms
+
+ GET / 200 in 629ms (next.js: 246ms, application-code: 384ms)
+ GET / 200 in 68ms (next.js: 6ms, application-code: 62ms)
+ GET / 200 in 42ms (next.js: 4ms, application-code: 38ms)
+Error [AI_APICallError]: Unable to process input image. Please retry or report in https://developers.generativeai.google/guide/troubleshooting
+    at ignore-listed frames {
+  cause: undefined,
+  url: 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:streamGenerateContent?alt=sse',
+  requestBodyValues: {
+    generationConfig: {
+      maxOutputTokens: undefined,
+      temperature: undefined,
+      topK: undefined,
+      topP: undefined,
+      frequencyPenalty: undefined,
+      presencePenalty: undefined,
+      stopSequences: undefined,
+      seed: undefined,
+      responseMimeType: undefined,
+      responseSchema: undefined,
+      responseModalities: undefined,
+      thinkingConfig: undefined
+    },
+    contents: [ [Object] ],
+    systemInstruction: { parts: [Array] },
+    safetySettings: undefined,
+    tools: [ [Object] ],
+    toolConfig: { functionCallingConfig: [Object] },
+    cachedContent: undefined,
+    labels: undefined,
+    serviceTier: undefined
+  },
+  statusCode: 400,
+  responseHeaders: {
+    'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000',
+    'content-length': '207',
+    'content-type': 'text/event-stream',
+    date: 'Sat, 05 Sep 2026 13:08:25 GMT',
+    server: 'scaffolding on HTTPServer2',
+    'server-timing': 'gfet4t7; dur=520',
+    vary: 'Origin, X-Origin, Referer',
+    'x-content-type-options': 'nosniff',
+    'x-frame-options': 'SAMEORIGIN',
+    'x-xss-protection': '0'
+  },
+  responseBody: '{\n' +
+    '  "error": {\n' +
+    '    "code": 400,\n' +
+    '    "message": "Unable to process input image. Please retry or report in https://developers.generativeai.google/guide/troubleshooting",\n' +
+    '    "status": "INVALID_ARGUMENT"\n' +
+    '  }\n' +
+    '}\n',
+  isRetryable: false,
+  data: {
+    error: {
+      code: 400,
+      message: 'Unable to process input image. Please retry or report in https://developers.generativeai.google/guide/troubleshooting',
+      status: 'INVALID_ARGUMENT'
+    }
+  }
+}
+ POST /api/chat 200 in 1191ms (next.js: 188ms, application-code: 1003ms)
+⨯ SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+ POST /api/chat 500 in 13ms (next.js: 4ms, application-code: 9ms)
+ POST /api/chat 200 in 6.1s (next.js: 5ms, application-code: 6.1s)
+ POST /api/chat 200 in 30.6s (next.js: 3ms, application-code: 30.6s)
+[?25h

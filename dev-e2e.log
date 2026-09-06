@@ -1,0 +1,14 @@
+
+> my-project@0.1.0 dev
+> next dev
+
+▲ Next.js 16.3.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://172.20.10.2:3000
+- Environments: .env.local
+✓ Ready in 413ms
+✓ Running next.config.mjs took 14ms
+
+ POST /api/chat 200 in 18.4s (next.js: 160ms, application-code: 18.2s)
+ POST /api/chat 200 in 14.0s (next.js: 2ms, application-code: 14.0s)
+[?25h

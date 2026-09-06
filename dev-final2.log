@@ -1,0 +1,17 @@
+
+> my-project@0.1.0 dev
+> next dev
+
+▲ Next.js 16.3.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://10.130.175.107:3000
+- Environments: .env.local
+✓ Ready in 373ms
+✓ Running next.config.mjs took 13ms
+
+ POST /api/chat 200 in 1328ms (next.js: 161ms, application-code: 1168ms)
+(node:11220) Warning: AI SDK Warning System: To turn off warning logging, set the AI_SDK_LOG_WARNINGS global to false.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:11220) Warning: AI SDK Warning (google.generative-ai / gemini-3.5-flash-lite): Replayed 1 `functionCall` part(s) for a Gemini 3 model without a `thoughtSignature` (tools: `update_claim_form`). Injected the documented `skip_thought_signature_validator` sentinel to keep the request from failing with HTTP 400. The likely cause is application code that drops `providerOptions.google.thoughtSignature` when persisting or serializing assistant tool-call messages. See https://ai.google.dev/gemini-api/docs/thought-signatures.
+ POST /api/chat 200 in 1084ms (next.js: 2ms, application-code: 1082ms)
+[?25h
